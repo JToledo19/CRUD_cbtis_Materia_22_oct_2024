@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block titulo %} Gestion materia {% endblock %} 
+
+{% block cuerpo %}
+    <h1> Gestion materia Jorge Toledo  </h1>
+    {% for m in Lasmaterias %}
+    <li> {{m.codigo}}.-.-.-. {{m.nombre}}.-.-.-.{{m.creditos}} </li>
+    {% endfor %}
+    {% endblock  %}
